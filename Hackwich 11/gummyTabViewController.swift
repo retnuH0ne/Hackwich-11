@@ -11,6 +11,7 @@ class gummyTabViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
+    
     var categoryOneImagesData = [String]()
     
     var gummyArray = ["Nerds Gummy Clusters", "Haribo Gold Bears", "Gummy Burger", "Sour Patch Kids"]

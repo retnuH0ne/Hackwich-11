@@ -44,7 +44,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="iir-7W-Khu"/>
                     <connections>
-                        <outlet property="tableView" destination="dvm-x7-Pe2" id="BPS-fr-z7v"/>
+                        <outlet property="tableView" destination="dvm-x7-Pe2" id="ZEc-NJ-YGr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pn4-Kw-4nJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -166,7 +166,6 @@ My name is Hunter Trujillo, and I have a passion for all kinds of sweets. People
                     </view>
                     <navigationItem key="navigationItem" id="8DO-gl-Ohz"/>
                     <connections>
-                        <outlet property="homeImage" destination="PTj-cM-AT1" id="Mec-9h-n65"/>
                         <outlet property="homeLabel" destination="bMH-Dk-TKc" id="ZqQ-2b-xDl"/>
                     </connections>
                 </viewController>
@@ -381,7 +380,6 @@ My name is Hunter Trujillo, and I have a passion for all kinds of sweets. People
                     </view>
                     <navigationItem key="navigationItem" id="5Tm-v5-tsu"/>
                     <connections>
-                        <outlet property="chocoImageView" destination="bpY-yU-9ta" id="V7J-gY-Hmm"/>
                         <outlet property="imageView" destination="bpY-yU-9ta" id="EXj-K2-Iur"/>
                     </connections>
                 </viewController>
@@ -436,9 +434,6 @@ My name is Hunter Trujillo, and I have a passion for all kinds of sweets. People
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="0C0-FJ-nBz"/>
-                    <connections>
-                        <outlet property="imageView" destination="qcJ-MG-tWv" id="oEa-2m-AEd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHg-WB-KW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -58,7 +58,7 @@ class lollipopViewController: UIViewController, UITableViewDelegate, UITableView
         if segue.identifier == "lolliSegue"
         {
             let s1 = segue.destination as! lollipopDetailViewController
-            let imageIndex = tableView.indexPathForSelectedRow?.row
+            let imageIndex = lolliTableView.indexPathForSelectedRow?.row
             s1.imagePass = categoryTwoImagesData[imageIndex!]
         }
     }

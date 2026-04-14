@@ -13,7 +13,7 @@ class chocoViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var categoryThreeImagesData = [String]()
     
-    var chocoArray = ["Juicy Drop Pop", "Tootsie Pop", "See's Candies Lollypop", "Dum Dums"]
+    var chocoArray = ["Big Island Candies", "Lindor Truffels", "Kitkat", "Hershy's"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -47,7 +47,7 @@ class chocoViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let dict = NSDictionary(contentsOfFile: path!)
         
-        categoryThreeImagesData = dict!.object(forKey: "lollyTabImages") as! [String]
+        categoryThreeImagesData = dict!.object(forKey: "chocoTabImages") as! [String]
 
         // Do any additional setup after loading the view.
     }
@@ -55,10 +55,10 @@ class chocoViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "lolliSegue"
+        if segue.identifier == "chocoSegue"
         {
-            let s1 = segue.destination as! lollipopDetailViewController
-            let imageIndex = tableView.indexPathForSelectedRow?.row
+            let s1 = segue.destination as! chocoDetailViewController
+            let imageIndex = chocoTableView.indexPathForSelectedRow?.row
             s1.imagePass = categoryThreeImagesData[imageIndex!]
         }
     }
