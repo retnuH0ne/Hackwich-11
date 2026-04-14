@@ -1,5 +1,5 @@
 //
-//  GummyDetailViewController.swift
+//  lollipopDetailViewController.swift
 //  Hackwich 11
 //
 //  Created by Hunter Trujillo on 4/13/26.
@@ -7,10 +7,11 @@
 
 import UIKit
 
-class GummyDetailViewController: UIViewController {
-
+class lollipopDetailViewController: UIViewController {
+    
     @IBOutlet weak var imageView: UIImageView!
     var imagePass: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +19,7 @@ class GummyDetailViewController: UIViewController {
             imageView.image = UIImage(named: imageName)
         }
         
+        // Do any additional setup after loading the view.
     }
     
 

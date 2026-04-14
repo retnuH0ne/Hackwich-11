@@ -2,9 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>lollyTabImages</key>
+	<array>
+		<string>JuicyDrop</string>
+		<string>TootsiePop</string>
+		<string>Sees</string>
+		<string>Dumdum</string>
+	</array>
+	<key>chocoTabImages</key>
+	<array>
+		<string>BigIsland</string>
+		<string>Truffels</string>
+		<string>Kitkat</string>
+		<string>Hershy</string>
+	</array>
 	<key>GummyTabImages</key>
 	<array>
 		<string>NerdsClusters</string>
+		<string>Bears</string>
+		<string>Burger</string>
+		<string>SourpatchKids</string>
 	</array>
 </dict>
 </plist>

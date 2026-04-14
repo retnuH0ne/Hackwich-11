@@ -1,23 +1,23 @@
 //
-//  gummyTabViewController.swift
+//  lollipopViewController.swift
 //  Hackwich 11
 //
-//  Created by Hunter Trujillo on 3/24/26.
+//  Created by Hunter Trujillo on 4/13/26.
 //
 
 import UIKit
 
-class gummyTabViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class lollipopViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var lolliTableView: UITableView!
     
-    var categoryOneImagesData = [String]()
+    var categoryTwoImagesData = [String]()
     
-    var gummyArray = ["Nerds Gummy Clusters", "Haribo Gold Bears", "Gummy Burger", "Sour Patch Kids"]
+    var lolliArray = ["Juicy Drop Pop", "Tootsie Pop", "See's Candies Lollypop", "Dum Dums"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return gummyArray.count
+        return lolliArray.count
         
     }
     
@@ -25,7 +25,7 @@ class gummyTabViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        let text = gummyArray[indexPath.row]
+        let text = lolliArray[indexPath.row]
         
         cell.textLabel?.text = text
         
@@ -39,26 +39,29 @@ class gummyTabViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         
         let dict = NSDictionary(contentsOfFile: path!)
         
-        categoryOneImagesData = dict!.object(forKey: "GummyTabImages") as! [String]
+        categoryTwoImagesData = dict!.object(forKey: "lollyTabImages") as! [String]
+
+        // Do any additional setup after loading the view.
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "gummySegue"
+        if segue.identifier == "lolliSegue"
         {
-            let s1 = segue.destination as! GummyDetailViewController
+            let s1 = segue.destination as! lollipopDetailViewController
             let imageIndex = tableView.indexPathForSelectedRow?.row
-            s1.imagePass = categoryOneImagesData[imageIndex!]
+            s1.imagePass = categoryTwoImagesData[imageIndex!]
         }
     }
-    
 
     /*
     // MARK: - Navigation

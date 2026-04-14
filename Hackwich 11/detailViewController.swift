@@ -1,23 +1,18 @@
 //
-//  GummyDetailViewController.swift
+//  detailViewController.swift
 //  Hackwich 11
 //
-//  Created by Hunter Trujillo on 4/13/26.
+//  Created by Hunter Trujillo on 4/14/26.
 //
 
 import UIKit
 
-class GummyDetailViewController: UIViewController {
+class detailViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
-    var imagePass: String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let imageName = imagePass{
-            imageView.image = UIImage(named: imageName)
-        }
-        
+        // Do any additional setup after loading the view.
     }
     
 
