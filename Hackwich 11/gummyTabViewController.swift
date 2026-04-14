@@ -30,6 +30,12 @@ class gummyTabViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +45,19 @@ class gummyTabViewController: UIViewController, UITableViewDelegate, UITableView
         let dict = NSDictionary(contentsOfFile: path!)
         
         categoryOneImagesData = dict!.object(forKey: "GummyTabImages") as! [String]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let identifier = segue.identifier {
+            
+            if identifier == "GummyDetailViewController" {
+                
+                let indexPath = self.tableView.indexPathForSelectedRow!
+                
+                let destinationVC = segue.destination as! GummyDetailViewController
+            }
+        }
     }
     
 

@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1209.9236641221373" y="289.43661971830988"/>
         </scene>
-        <!--View Controller-->
+        <!--Gummy Tab View Controller-->
         <scene sceneID="8DN-NI-7JD">
             <objects>
-                <viewController id="QXL-on-Vsn" sceneMemberID="viewController">
+                <viewController id="QXL-on-Vsn" customClass="gummyTabViewController" customModule="Hackwich_11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FNx-1P-e21">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
